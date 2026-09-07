@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primero se pone normalize -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Nuestro propio CSS -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
     <title>Developer page</title>
 </head>
 <body>
     <header>
-        <h1>Leonardo Balmes Developer</h1>
+        <h1 class="my-title">Leonardo Balmes <span >Developer</span></h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -120,6 +127,34 @@
 
     <section>
         <h2>Contacto</h2>
+        <form>
+            <fieldset>
+                <legend>LLena tus datos de contactos</legend>
+                <div>
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Tu nombre completo"/>
+                </div>
+
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Tu teléfono"/>
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Tu correo electronico"/>
+                </div>
+
+                <div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar"/>
+                </div>
+            </fieldset>
+        </form>
     </section>
 
     <footer>
